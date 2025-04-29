@@ -1,0 +1,28 @@
+{
+    "name": "laravel_n/google-wallet-vouchers",
+    "description": "Google Wallet integration for Laravel vouchers",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "LaravelN\\GoogleWalletVouchers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "naira-poghosyan-92",
+            "email": "naira@zealous.com"
+        }
+    ],
+  
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelN\\GoogleWalletVouchers\\VoucherWalletServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "google/apiclient": "^2.18",
+        "firebase/php-jwt": "^6.11"
+    }
+}
