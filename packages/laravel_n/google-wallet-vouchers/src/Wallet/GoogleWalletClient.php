@@ -80,10 +80,9 @@ class GoogleWalletClient {
     $this->client->setScopes(['https://www.googleapis.com/auth/wallet_object.issuer']);
     $this->service   = new Walletobjects($this->client);
     $this->className = config('voucherwallet.class_id');
-    $this->createGenericClass();
   }
 
-  private function createGenericClass() {
+  public function createGenericClass() {
     $classId = "{$this->issuerId}.{$this->className}";
     try {
       $this->service->genericclass->get($classId);
