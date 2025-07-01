@@ -87,7 +87,6 @@ class GoogleWalletClient {
     try {
       $this->service->genericclass->get($classId);
       print_r("---Class $classId already exists!---");
-      return;
     } catch (Exception $e) {
       $newClass = new GenericClass(array_merge([
         'id' => $classId,

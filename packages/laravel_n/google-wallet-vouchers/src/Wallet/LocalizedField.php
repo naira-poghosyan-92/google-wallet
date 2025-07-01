@@ -16,7 +16,7 @@ class LocalizedField {
         'value'    => $value,
       ];
     }
-
+    
     return $data;
   }
 }
